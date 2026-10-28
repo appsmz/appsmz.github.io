@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>appsmz – small, calm Android apps</title>
-<meta name="description" content="Sleep Noise: white, pink and brown noise, rain, waves, fireplace and more. Sleep timer, works offline. Free on Google Play.">
+<meta name="description" content="Small, calm Android apps: Sleep Noise for sleep and focus, Savings Challenge for money saving challenges. Free, offline, no account.">
 <link rel="icon" href="assets/icon.png">
 <link rel="alternate" hreflang="pl" href="https://appsmz.github.io/pl/">
-<meta property="og:title" content="Sleep Noise – sounds for sleep, focus and calm">
-<meta property="og:description" content="19 soothing sounds you can mix. Sleep timer, night screen, works offline.">
+<meta property="og:title" content="appsmz – small, calm Android apps">
+<meta property="og:description" content="Sleep Noise and Savings Challenge. Free, offline, no account.">
 <meta property="og:image" content="https://appsmz.github.io/assets/feature.png">
 <style>
   :root { color-scheme: dark; }
@@ -28,10 +28,22 @@
   .shots { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 36px 0; }
   .shots img { width: 250px; max-width: 30%; min-width: 150px; border-radius: 18px; box-shadow: 0 6px 24px rgba(0,0,0,.5); }
   h2 { margin-top: 44px; }
+  .app h2 { margin: 18px 0 6px; font-size: 2rem; }
+  .app h3 { margin-top: 36px; font-size: 1.4rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; padding: 0; list-style: none; }
   .grid li { background: rgba(255,255,255,.06); border-radius: 16px; padding: 14px 16px; }
   .grid strong { display: block; margin-bottom: 2px; }
   footer { padding: 36px 20px 48px; font-size: .9rem; color: #a9aac4; text-align: center; }
+  .intro { text-align: center; padding: 40px 0 8px; }
+  .intro h1 { font-size: 2.2rem; }
+  .apps-nav { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 18px 0 0; }
+  .apps-nav a { background: rgba(255,255,255,.08); border-radius: 999px; padding: 8px 18px; text-decoration: none; }
+  .app { padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1); margin-top: 48px; }
+  .app .hero { padding-top: 24px; }
+  .badge.soon { background: rgba(255,255,255,.12); color: #c9ccff; cursor: default; }
+  .savings .badge { background: #6fe3a8; color: #06321d; }
+  .savings .badge.soon { background: rgba(255,255,255,.12); color: #bfeedd; }
+  .savings a { color: #8de8bc; }
 </style>
 </head>
 <body>
@@ -40,36 +52,71 @@
   <nav><a href="pl/">Polski</a></nav>
 </header>
 <main>
-  <section class="hero">
-    <img class="icon" src="assets/icon.png" alt="Sleep Noise icon">
-    <h1>Sleep Noise</h1>
-    <p class="tagline">Sounds for sleep, focus and calm. Mix them, set a timer, switch off the screen.</p>
-    <a class="badge" href="https://play.google.com/store/apps/details?id=io.github.appsmz.sleepnoise">Get it on Google Play</a>
+  <section class="intro">
+    <h1>Small, calm Android apps</h1>
+    <p class="tagline">Free, offline, no account. Two apps so far:</p>
+    <div class="apps-nav"><a href="#sleep-noise">Sleep Noise</a><a href="#savings-challenge">Savings Challenge</a></div>
   </section>
 
-  <div class="shots">
+  <article class="app" id="sleep-noise">
+    <section class="hero">
+      <img class="icon" src="assets/icon.png" alt="Sleep Noise icon">
+      <h2>Sleep Noise</h2>
+      <p class="tagline">Sounds for sleep, focus and calm. Mix them, set a timer, switch off the screen.</p>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=io.github.appsmz.sleepnoise">Get it on Google Play</a>
+    </section>
+
+    <div class="shots">
     <img src="assets/01_main.png" alt="Sleep Noise main screen" loading="lazy">
     <img src="assets/02_mix.png" alt="Mixing several sounds" loading="lazy">
     <img src="assets/03_timer.png" alt="Sleep timer" loading="lazy">
-  </div>
+    </div>
 
-  <h2>What you get</h2>
-  <ul class="grid">
+    <h3>What you get</h3>
+    <ul class="grid">
     <li><strong>Noise colours</strong>White, pink, brown, grey, blue and violet noise, generated live on your device.</li>
     <li><strong>Nature</strong>Rain, ocean waves, wind, a gentle stream, a waterfall and birdsong.</li>
     <li><strong>Cozy</strong>Crackling fireplace, winter blizzard, a purring cat and two kinds of clocks.</li>
     <li><strong>Mix your own</strong>Play several sounds at once and set each volume separately. Your last mix is remembered.</li>
     <li><strong>Sleep timer</strong>15, 30, 60, 90 minutes or your own. The sound fades out gently.</li>
     <li><strong>Built for the night</strong>Dark theme, a black night screen, playback with the screen off, pauses when headphones are unplugged.</li>
-  </ul>
+    </ul>
 
-  <h2>Simple and private</h2>
-  <p>No account, works offline, free and supported by unobtrusive ads. The app does not collect personal data.
-     Read the <a href="sleep-noise/privacy.html">privacy policy</a>.</p>
+    <h3>Simple and private</h3>
+    <p>No account, works offline, free and supported by unobtrusive ads. The app does not collect personal data. Read the <a href="sleep-noise/privacy.html">privacy policy</a>.</p>
+  </article>
+
+  <article class="app savings" id="savings-challenge">
+    <section class="hero">
+      <img class="icon" src="assets/savings-icon.png" alt="Savings Challenge icon">
+      <h2>Savings Challenge</h2>
+      <p class="tagline">Turn saving into a game: 100 envelopes, 52 weeks, 365 days or your own goal. Fill the grid, colour the picture, keep the streak.</p>
+      <span class="badge soon">Coming soon on Google Play</span>
+    </section>
+
+    <div class="shots">
+    <img src="assets/savings-01_list.png" alt="Challenge list" loading="lazy">
+    <img src="assets/savings-02_details.png" alt="Challenge details with the pixel-art piggy bank" loading="lazy">
+    <img src="assets/savings-03_draw.png" alt="Drawing an envelope" loading="lazy">
+    </div>
+
+    <h3>What you get</h3>
+    <ul class="grid">
+    <li><strong>Popular challenges</strong>100 envelopes, 52 weeks (also reversed), 365 days (fixed or growing) and a custom goal split into random fields.</li>
+    <li><strong>Colouring progress</strong>A pixel-art picture is coloured in as you save. Piggy bank, house, car, beach, gift and Christmas tree.</li>
+    <li><strong>Streaks</strong>Keep your streak alive. Missed one period? Watch a short ad to save it.</li>
+    <li><strong>Reminders</strong>One reminder, daily or weekly, at the time you choose. Asked only when you want it.</li>
+    <li><strong>Any currency</strong>Amounts in your local currency, 21 languages.</li>
+    <li><strong>Just ticking</strong>No expenses to enter. Tick a field and see your progress.</li>
+    </ul>
+
+    <h3>Simple and private</h3>
+    <p>No account, works offline, free and supported by unobtrusive ads. Your challenges stay on your device. The app does not handle money and gives no financial advice. Read the <a href="savings-challenge/privacy.html">privacy policy</a>.</p>
+  </article>
 </main>
 <footer>
   <p>Questions or ideas? <a href="mailto:appsmz@gmail.com">appsmz@gmail.com</a></p>
-  <p>Sound recordings: Joseph Sardin, <a href="https://bigsoundbank.com">BigSoundBank.com</a> (CC0).</p>
+  <p>Sound recordings (Sleep Noise): Joseph Sardin, <a href="https://bigsoundbank.com">BigSoundBank.com</a> (CC0).</p>
 </footer>
 </body>
 </html>

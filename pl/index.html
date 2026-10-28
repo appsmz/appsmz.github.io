@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>appsmz – małe, spokojne aplikacje na Androida</title>
-<meta name="description" content="Szumy do snu: biały, różowy i brązowy szum, deszcz, fale, kominek i więcej. Timer snu, działa offline. Za darmo w Google Play.">
+<meta name="description" content="Małe, spokojne aplikacje na Androida: Szumy do snu do spania i skupienia oraz Wyzwanie oszczędnościowe. Za darmo, offline, bez konta.">
 <link rel="icon" href="../assets/icon.png">
 <link rel="alternate" hreflang="en" href="https://appsmz.github.io/">
-<meta property="og:title" content="Szumy do snu – dźwięki do spania, skupienia i relaksu">
-<meta property="og:description" content="19 kojących dźwięków do miksowania. Timer snu, ekran nocny, działa offline.">
+<meta property="og:title" content="appsmz – małe, spokojne aplikacje na Androida">
+<meta property="og:description" content="Szumy do snu i Wyzwanie oszczędnościowe. Za darmo, offline, bez konta.">
 <meta property="og:image" content="https://appsmz.github.io/assets/feature.png">
 <style>
   :root { color-scheme: dark; }
@@ -28,10 +28,22 @@
   .shots { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 36px 0; }
   .shots img { width: 250px; max-width: 30%; min-width: 150px; border-radius: 18px; box-shadow: 0 6px 24px rgba(0,0,0,.5); }
   h2 { margin-top: 44px; }
+  .app h2 { margin: 18px 0 6px; font-size: 2rem; }
+  .app h3 { margin-top: 36px; font-size: 1.4rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; padding: 0; list-style: none; }
   .grid li { background: rgba(255,255,255,.06); border-radius: 16px; padding: 14px 16px; }
   .grid strong { display: block; margin-bottom: 2px; }
   footer { padding: 36px 20px 48px; font-size: .9rem; color: #a9aac4; text-align: center; }
+  .intro { text-align: center; padding: 40px 0 8px; }
+  .intro h1 { font-size: 2.2rem; }
+  .apps-nav { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 18px 0 0; }
+  .apps-nav a { background: rgba(255,255,255,.08); border-radius: 999px; padding: 8px 18px; text-decoration: none; }
+  .app { padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1); margin-top: 48px; }
+  .app .hero { padding-top: 24px; }
+  .badge.soon { background: rgba(255,255,255,.12); color: #c9ccff; cursor: default; }
+  .savings .badge { background: #6fe3a8; color: #06321d; }
+  .savings .badge.soon { background: rgba(255,255,255,.12); color: #bfeedd; }
+  .savings a { color: #8de8bc; }
 </style>
 </head>
 <body>
@@ -40,36 +52,71 @@
   <nav><a href="../">English</a></nav>
 </header>
 <main>
-  <section class="hero">
-    <img class="icon" src="../assets/icon.png" alt="Ikona Szumów do snu">
-    <h1>Szumy do snu</h1>
-    <p class="tagline">Dźwięki do spania, skupienia i relaksu. Miksuj je, ustaw timer, wyłącz ekran.</p>
-    <a class="badge" href="https://play.google.com/store/apps/details?id=io.github.appsmz.sleepnoise&hl=pl">Pobierz z Google Play</a>
+  <section class="intro">
+    <h1>Małe, spokojne aplikacje na Androida</h1>
+    <p class="tagline">Za darmo, offline, bez konta. Na razie dwie aplikacje:</p>
+    <div class="apps-nav"><a href="#sleep-noise">Szumy do snu</a><a href="#savings-challenge">Wyzwanie oszczędnościowe</a></div>
   </section>
 
-  <div class="shots">
+  <article class="app" id="sleep-noise">
+    <section class="hero">
+      <img class="icon" src="../assets/icon.png" alt="Ikona Szumów do snu">
+      <h2>Szumy do snu</h2>
+      <p class="tagline">Dźwięki do spania, skupienia i relaksu. Miksuj je, ustaw timer, wyłącz ekran.</p>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=io.github.appsmz.sleepnoise&hl=pl">Pobierz z Google Play</a>
+    </section>
+
+    <div class="shots">
     <img src="../assets/01_main.png" alt="Ekran główny" loading="lazy">
     <img src="../assets/02_mix.png" alt="Miksowanie dźwięków" loading="lazy">
     <img src="../assets/03_timer.png" alt="Timer snu" loading="lazy">
-  </div>
+    </div>
 
-  <h2>Co dostajesz</h2>
-  <ul class="grid">
+    <h3>Co dostajesz</h3>
+    <ul class="grid">
     <li><strong>Kolory szumu</strong>Biały, różowy, brązowy, szary, niebieski i fioletowy szum, generowane na bieżąco w telefonie.</li>
     <li><strong>Natura</strong>Deszcz, fale morskie, wiatr, spokojny strumień, wodospad i śpiew ptaków.</li>
     <li><strong>Przytulnie</strong>Trzaskający kominek, zimowa zamieć, mruczący kot i dwa rodzaje zegarów.</li>
     <li><strong>Własny miks</strong>Kilka dźwięków naraz, osobna głośność każdego. Ostatni miks jest zapamiętywany.</li>
     <li><strong>Timer snu</strong>15, 30, 60, 90 minut albo własny czas. Dźwięk łagodnie cichnie.</li>
     <li><strong>Stworzone na noc</strong>Ciemny motyw, czarny ekran nocny, gra przy wyłączonym ekranie, pauza po wyjęciu słuchawek.</li>
-  </ul>
+    </ul>
 
-  <h2>Prosto i prywatnie</h2>
-  <p>Bez konta, działa offline, darmowa i utrzymywana z dyskretnych reklam. Aplikacja nie zbiera danych osobowych.
-     Zobacz <a href="../sleep-noise/privacy.html">politykę prywatności</a>.</p>
+    <h3>Prosto i prywatnie</h3>
+    <p>Bez konta, działa offline, darmowa i utrzymywana z dyskretnych reklam. Aplikacja nie zbiera danych osobowych. Zobacz <a href="../sleep-noise/privacy.html">politykę prywatności</a>.</p>
+  </article>
+
+  <article class="app savings" id="savings-challenge">
+    <section class="hero">
+      <img class="icon" src="../assets/savings-icon.png" alt="Ikona Wyzwania oszczędnościowego">
+      <h2>Wyzwanie oszczędnościowe</h2>
+      <p class="tagline">Zamień oszczędzanie w grę: 100 kopert, 52 tygodnie, 365 dni albo własny cel. Wypełniaj siatkę, koloruj obrazek, trzymaj serię.</p>
+      <span class="badge soon">Wkrótce w Google Play</span>
+    </section>
+
+    <div class="shots">
+    <img src="../assets/savings-pl-01_list.png" alt="Lista wyzwań" loading="lazy">
+    <img src="../assets/savings-pl-02_details.png" alt="Szczegóły wyzwania ze świnką z pixel artu" loading="lazy">
+    <img src="../assets/savings-pl-03_draw.png" alt="Losowanie koperty" loading="lazy">
+    </div>
+
+    <h3>Co dostajesz</h3>
+    <ul class="grid">
+    <li><strong>Popularne wyzwania</strong>100 kopert, 52 tygodnie (także odwrócone), 365 dni (stała lub rosnąca kwota) i własny cel podzielony na losowe pola.</li>
+    <li><strong>Kolorowanie postępu</strong>Obrazek z pixel artu koloruje się wraz z oszczędzaniem. Świnka, domek, auto, plaża, prezent i choinka.</li>
+    <li><strong>Serie</strong>Utrzymuj serię. Opuściłeś jeden okres? Obejrzyj krótką reklamę, żeby ją uratować.</li>
+    <li><strong>Przypomnienia</strong>Jedno przypomnienie, codzienne lub co tydzień, o wybranej porze. Pytamy dopiero, gdy chcesz.</li>
+    <li><strong>Dowolna waluta</strong>Kwoty w Twojej walucie, 21 języków.</li>
+    <li><strong>Tylko odhaczanie</strong>Bez wpisywania wydatków. Odhaczasz pole i widzisz postęp.</li>
+    </ul>
+
+    <h3>Prosto i prywatnie</h3>
+    <p>Bez konta, działa offline, darmowa i utrzymywana z dyskretnych reklam. Wyzwania zostają na Twoim urządzeniu. Aplikacja nie obsługuje pieniędzy i nie daje porad finansowych. Zobacz <a href="../savings-challenge/privacy.html">politykę prywatności</a>.</p>
+  </article>
 </main>
 <footer>
   <p>Pytania lub pomysły? <a href="mailto:appsmz@gmail.com">appsmz@gmail.com</a></p>
-  <p>Nagrania dźwięków: Joseph Sardin, <a href="https://bigsoundbank.com">BigSoundBank.com</a> (CC0).</p>
+  <p>Nagrania dźwięków (Szumy do snu): Joseph Sardin, <a href="https://bigsoundbank.com">BigSoundBank.com</a> (CC0).</p>
 </footer>
 </body>
 </html>
