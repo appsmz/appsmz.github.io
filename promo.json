@@ -8,7 +8,7 @@
     { "package": "com.virtual.guitar", "enabled": false, "priority": 40 },
     { "package": "com.mz.virtual.electric.guitar", "enabled": false, "priority": 41 },
     { "package": "com.mz.guitar.heavy.metal", "enabled": false, "priority": 42 },
-    { "package": "mz.guitar_tuner", "enabled": false, "priority": 50 },
+    { "package": "mz.guitar_tuner", "enabled": true, "priority": 50 },
     { "package": "mz.electric.guitar.tuner", "enabled": false, "priority": 51 },
     { "package": "io.github.appsmz.sleepnoise", "enabled": true, "priority": 60 },
     { "package": "io.github.appsmz.savings", "enabled": true, "priority": 70 }
